@@ -1,7 +1,6 @@
 """
 Flask API Dashboard - Main Application Entry Point
 """
-
 from app import create_app, db
 from app.models import User, SavedArticle, CryptoHolding
 import os
