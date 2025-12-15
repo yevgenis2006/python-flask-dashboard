@@ -2,45 +2,7 @@
 
 A beautiful, modern web application built with Flask that aggregates data from multiple APIs into one stunning, interactive dashboard. No database required for basic features - everything runs in your browser!
 
-![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
-![Flask](https://img.shields.io/badge/flask-3.0-green.svg)
-![License](https://img.shields.io/badge/license-MIT-orange.svg)
-![Status](https://img.shields.io/badge/status-active-success.svg)
 
----
-
-## ✨ Key Features
-
-### 🌍 Global & Local News Center
-- **Global Trending News** from 13 countries
-- **Local News Detection** - Auto-detect your location for city-specific news
-- **7 News Categories** with emoji icons (Tech, Business, Sports, Health, etc.)
-- **Real-time Search** with smart filtering
-- **Load More** pagination for endless browsing
-
-### 🌤️ Smart Weather Station
-- **GPS Auto-Detection** - One-click location detection
-- **Save Unlimited Cities** - Quick-access to your favorite locations
-- **5-Day Detailed Forecast** - Temperature, humidity, wind, and more
-- **Beautiful Weather Icons** - Visual weather representation
-- **Sunrise/Sunset Times** - Plan your day better
-
-### 💰 Crypto Portfolio Tracker
-- **Live Prices** for 100+ cryptocurrencies
-- **Portfolio Management** - Track your crypto investments
-- **Profit/Loss Calculations** - See real-time gains and losses
-- **Price Alerts** - Get notified when prices hit your targets
-- **Trending Coins** - Discover what's hot in crypto
-- **No API Key Required** - Uses free CoinGecko API
-
-### 🐙 GitHub Repository Explorer
-- **Search Millions of Repos** - Find any public repository
-- **Trending Repos** - Daily, weekly, and monthly trends
-- **Language Filtering** - Browse by programming language
-- **Detailed Analytics** - Stars, forks, contributors, and more
-- **Works Without Token** - 60 requests/hour (perfect for personal use)
-
----
 
 ## 🎨 Design Highlights
 
@@ -53,90 +15,6 @@ A beautiful, modern web application built with Flask that aggregates data from m
 
 ---
 
-## 🚀 Quick Start (5 Minutes)
-
-### 1️⃣ Clone & Setup
-```bash
-git clone https://github.com/b5119/flask-api-dashboard.git
-cd flask-api-dashboard
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-### 2️⃣ Get FREE API Keys
-**Takes 5 minutes total!** See [SETUP_GUIDE.md](SETUP_GUIDE.md) for detailed instructions.
-
-- **NewsAPI** (2 min): https://newsapi.org/register
-- **OpenWeatherMap** (2 min): https://openweathermap.org/api
-- **GitHub Token** (1 min, optional): https://github.com/settings/tokens
-- **CoinGecko**: No key needed! ✨
-
-### 3️⃣ Create `.env` File
-```env
-SECRET_KEY=your-super-secret-key-change-this
-NEWSAPI_KEY=your_newsapi_key_here
-OPENWEATHER_API_KEY=your_openweathermap_key_here
-GITHUB_TOKEN=optional_github_token
-FLASK_ENV=development
-```
-
-### 4️⃣ Run!
-```bash
-python run.py
-```
-
-**Visit:** http://localhost:5000 🎉
-
----
-
-## 📁 Project Structure
-```
-flask-api-dashboard/
-├── app/
-│   ├── __init__.py                      # Application factory + extensions initialization
-│   ├── models.py                        # SQLAlchemy models (User, Articles, CryptoHoldings, etc.)
-│   │
-│   ├── api/                             # External API integrations (service layer)
-│   │   ├── news_api.py                  # NewsAPI service wrapper
-│   │   ├── weather_api.py               # OpenWeatherMap service wrapper
-│   │   ├── crypto_api.py                # CoinGecko client utilities
-│   │   ├── github_api.py                # GitHub REST API wrapper
-│   │   ├── tracker.py                   # Crypto alerting + portfolio tracking tools
-│   │   └── github_analytics_core.py     # GitHub repo analytics engine
-│   │
-│   ├── routes/                          # Route handlers (controllers)
-│   │   ├── main.py                      # Dashboard home view
-│   │   ├── news.py                      # News routes
-│   │   ├── weather.py                   # Weather routes
-│   │   ├── crypto.py                    # Crypto tracking routes
-│   │   └── github.py                    # GitHub stats/explorer routes
-│   │
-│   ├── templates/                       # Jinja2 HTML views
-│   │   ├── base.html                    # Shared base layout
-│   │   ├── index.html                   # Main dashboard UI
-│   │   ├── news.html                    # News UI
-│   │   ├── weather.html                 # Weather UI
-│   │   ├── crypto.html                  # Crypto portfolio UI
-│   │   └── github.html                  # GitHub analytics UI
-│   │
-│   ├── static/                          # Frontend assets
-│   │   ├── css/
-│   │   │   └── style.css                # Global styling
-│   │   ├── js/
-│   │   │   └── main.js                  # Interactive UI logic
-│   │   └── img/                         # Logos, screenshots, icons
-│   │
-│   └── __init__.py                      # Package init
-│
-├── config.py                             # Configuration classes (Production, Dev, Test)
-├── run.py                                # App entry point
-├── requirements.txt                      # Python dependency list
-│
-├── SETUP_GUIDE.md                        # How to install & run the project
-├── IMPROVEMENTS.md                       # Future upgrade notes
-└── README.md                             # Project documentation
-```
 
 ## 🛠️ Technology Stack
 
