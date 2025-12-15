@@ -2,7 +2,6 @@
 Database Models
 Defines all database models for the application
 """
-
 from app import db
 from datetime import datetime
 
